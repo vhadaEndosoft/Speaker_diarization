@@ -35,7 +35,7 @@ def assign_speaker_name(dialogue):
 
 def transcript_to_dictionary(dialogue):
     # Split the output into lines
-    lines = dialogue.splitlines()
+    lines = dialogue.strip().split("\n")
 
     # Initialize the dictionary
     dictionary = {}
